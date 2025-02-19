@@ -9,4 +9,5 @@ public interface LivroService {
 
     List<LivroEntity> listarTodosLivros();
 
+    void deleteLivro(Long id);
 }
