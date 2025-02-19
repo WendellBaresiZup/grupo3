@@ -2,8 +2,10 @@ package br.com.zup.dinamica_em_grupo_biblioteca.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import lombok.Getter;
 
 import java.util.Date;
+
 @Entity
 @Table(name = "livro")
 public class LivroEntity {
@@ -13,6 +15,7 @@ public class LivroEntity {
     private String autor;
     private String editora;
     private Date anoPublicacao;
+    private boolean disponivel;
     private boolean disponivel;
 
     public LivroEntity() {
